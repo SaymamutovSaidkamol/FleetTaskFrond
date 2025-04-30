@@ -127,6 +127,7 @@ body {
 .hero .Ipad___item {
   display: none;
 }
+
 @media (max-width: 800px) {
   .hero .desktop {
     display: none;
@@ -146,10 +147,12 @@ body {
     display: none;
   }
   .hero .mobile {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
   }
 }
-
 .popular__cards {
   border: 1px solid black;
   display: flex;

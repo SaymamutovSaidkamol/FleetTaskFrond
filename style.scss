@@ -144,8 +144,6 @@ body {
 
 .hero{
     width: 100%;
-    // border: 1px solid black;
-
     .mobile{
         display: none;
     }
@@ -154,32 +152,37 @@ body {
         display: none;
     }
 
-    @media (max-width: 800px) {
-        .desktop {
-            display: none;
-        }
 
-        .mobile {
-            display: none;
-        }
+}
 
-        .Ipad___item{
-            display: block;
-        }
+@media (max-width: 800px) {
+   .hero .desktop {
+        display: none;
     }
 
-    @media (max-width: 450px) {
-        .desktop {
-            display: none;
-        }
+    .hero .mobile {
+        display: none;
+    }
 
-        .Ipad___item{
-            display: none;
-        }
+    .hero .Ipad___item{
+        display: block;
+    }
+}
 
-        .mobile {
-            display: block;
-        }
+@media (max-width: 450px) {
+    .hero .desktop {
+        display: none;
+    }
+
+    .hero .Ipad___item{
+        display: none;
+    }
+
+    .hero .mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
     }
 }
 
