@@ -42,7 +42,7 @@
               <a href="#" class="header__link"><span><img src="./assets/image/avatar.png" alt="" /></span></a>
             </li>
             <li class="header__item mobil__menu Ipad__item">
-              <i class="fa-solid fa-bars"></i>
+              <button id="openModalBtn"><i class="fa-solid fa-bars"></i></button>
             </li>
           </div>
         </div>
@@ -66,7 +66,6 @@
             <h3>for car rentals</h3>
           </div>
           <div class="card__wrapper">
-
             <div class="cards__popular">
               <div class="card__popular">
                 <div class="card__image">
@@ -123,10 +122,46 @@
               </div>
             </div>
           </div>
-          <button class="show__more__cards">Show more ></button>
+          <button class="show__more__cards">Show more     ></button>
+        </div>
+      </section>
+
+      <section class="container group__mains">
+        <div class="groups">
+          <div class="group__main__body">
+            <p>supercharge your planning powers</p>
+            <h2>Rent a car in minutes with Fleet</h2>
+            <h3>Stacks is a production-ready library of stackable content blocks built in React Native.</h3>
+            <div class="group__main__input">
+              <input type="text" placeholder="Enter your phone number">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="group__main_image">
+            <img src="./assets/image/phonmockup.png" alt="" class="desktop">
+            <img src="./assets/image/Group.png" alt="" class="Ipad">
+            <img src="./assets/image/phone_mockup.png" alt="" class="mobile">
+          </div>
         </div>
       </section>
     </main>
+
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <span class="modal-close" id="closeModalBtn">&times;</span>
+        <li class="header__item desktop__item Ipad__item">
+          <a href="#" class="header__link"><span>Support</span></a>
+        </li>
+        <li class="header__item desktop__item Ipad__item">
+          <i class="fa-solid fa-globe globe"></i>
+          <a href="#" class="header__link globe"><span>Language</span></a>
+        </li>
+        <li class="header__item desktop__item">
+          <a href="#" class="header__link"><span class="list">List your property</span></a>
+        </li>
+      </div>
+    </div>
 
     <script src="./js/main.js"></script>
   </body>
